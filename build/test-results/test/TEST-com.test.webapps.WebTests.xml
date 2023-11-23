@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.test.webapps.WebTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-23T11:19:53" hostname="TestVagrants-MacBook-Pro-3.local" time="3.602">
+  <properties/>
+  <testcase name="webTesting" classname="com.test.webapps.WebTests" time="3.602"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

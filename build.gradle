@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+//def browserstackSDKArtifact = configurations.compileClasspath.resolvedConfiguration.resolvedArtifacts.find { it.name == 'browserstack-java-sdk' }
+
+dependencies {
+    testImplementation group: 'org.testng', name: 'testng', version: '7.8.0'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.15.0'
+    implementation 'com.browserstack:browserstack-local-java:1.0.6'
+    implementation group: 'io.appium', name: 'java-client', version: '9.0.0'
+    implementation 'io.qameta.allure:allure-testng:2.19.0'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.30'
+    compileOnly 'com.browserstack:browserstack-java-sdk:latest.release'
+
+
+
+}
+
+test {
+    useTestNG(){
+        useDefaultListeners = true
+//        jvmArgs "-javaagent:${browserstackSDKArtifact.file}"
+    }
+
+    testLogging {
+        events "PASSED", "FAILED", "SKIPPED"
+        exceptionFormat = 'full'
+    }
+    testLogging.showStandardStreams = true
+   // systemProperty "environment",System.getProperty("environment")
+    systemProperty 'environment', project.hasProperty('environment') ? project.environment : 'WEB'
+    systemProperty 'local', project.hasProperty('local') ? project.environment : 'true'
+
+}
