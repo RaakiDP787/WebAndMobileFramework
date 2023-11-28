@@ -18,7 +18,7 @@ public class WebDriverInitliazer {
 
         Config config = new Config();
 
-        if(config.getCloud().equals("false")) {
+        if(config.getLocal().equals("true")) {
             if (config.getBrowserName().equals(BrowserType.CHROME.getPostfixName())) {
                 driver = new ChromeDriver();
             } else if (config.getBrowserName().equals(BrowserType.FIREFOX.getPostfixName())) {

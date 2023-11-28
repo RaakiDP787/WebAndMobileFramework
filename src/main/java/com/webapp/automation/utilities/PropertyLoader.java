@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 public class PropertyLoader {
@@ -12,8 +13,9 @@ public class PropertyLoader {
         Properties properties = new Properties();
         try {
            // File file = new File("/Users/testvagrant/Documents/WebAndMobileFramework/src/test/resources/config.properties");
-           File file = new File("config.properties");
-           //File file = new File(System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "config.properties");
+            Path filePath = Paths.get("src", "test", "resources", "config.properties");
+            String pathString = filePath.toString();
+            File file = new File(pathString);
 
             FileInputStream input = new FileInputStream(file);
             properties.load(input);

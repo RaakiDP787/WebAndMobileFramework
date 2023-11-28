@@ -1,25 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-23T16:49:50 IST" name="Gradle suite" finished-at="2023-11-23T16:49:57 IST" duration-ms="6579">
+  <suite started-at="2023-11-28T16:43:51 IST" name="My suite" finished-at="2023-11-28T16:44:00 IST" duration-ms="8871">
     <groups>
     </groups>
-    <test started-at="2023-11-23T16:49:50 IST" name="Gradle test" finished-at="2023-11-23T16:49:57 IST" duration-ms="6579">
+    <test started-at="2023-11-28T16:43:51 IST" name="WebSuite" finished-at="2023-11-28T16:44:00 IST" duration-ms="8871">
       <class name="com.test.webapps.WebTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.webapps.WebTests@266374ef]" started-at="2023-11-23T16:49:50 IST" name="setup" finished-at="2023-11-23T16:49:53 IST" duration-ms="2690" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.webapps.WebTests@48793bef]" started-at="2023-11-28T16:43:51 IST" name="setup" finished-at="2023-11-28T16:43:53 IST" duration-ms="1799" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="webTesting()[pri:0, instance:com.test.webapps.WebTests@266374ef]" started-at="2023-11-23T16:49:53 IST" name="webTesting" finished-at="2023-11-23T16:49:57 IST" duration-ms="3602" status="PASS">
+        <test-method signature="goToCartPage2()[pri:0, instance:com.test.webapps.WebTests@48793bef]" started-at="2023-11-28T16:43:53 IST" name="goToCartPage2" finished-at="2023-11-28T16:44:00 IST" duration-ms="6822" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='_2KpZ6l _2ObVJD _3AWRsL']"}
+  (Session info: chrome=119.0.6045.159)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3edc40aaa5f089f0673d7bcd9b8c918c, findElement {using=xpath, value=//button[@class='_2KpZ6l _2ObVJD _3AWRsL']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.159, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/dn/xzdxqwp9465...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59058}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59058/devtoo..., se:cdpVersion: 119.0.6045.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3edc40aaa5f089f0673d7bcd9b8c918c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='_2KpZ6l _2ObVJD _3AWRsL']"}
+  (Session info: chrome=119.0.6045.159)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3edc40aaa5f089f0673d7bcd9b8c918c, findElement {using=xpath, value=//button[@class='_2KpZ6l _2ObVJD _3AWRsL']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.159, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/dn/xzdxqwp9465...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59058}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59058/devtoo..., se:cdpVersion: 119.0.6045.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3edc40aaa5f089f0673d7bcd9b8c918c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at com.webapp.automation.pages.ProductPage.goToCartPage(ProductPage.java:23)
+at com.test.webapps.WebTests.goToCartPage2(WebTests.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- webTesting -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.webapps.WebTests@266374ef]" started-at="2023-11-23T16:49:57 IST" name="tearDown" finished-at="2023-11-23T16:49:57 IST" duration-ms="170" status="PASS">
+        </test-method> <!-- goToCartPage2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.webapps.WebTests@48793bef]" started-at="2023-11-28T16:44:00 IST" name="tearDown" finished-at="2023-11-28T16:44:00 IST" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.test.webapps.WebTests -->
-    </test> <!-- Gradle test -->
-  </suite> <!-- Gradle suite -->
+    </test> <!-- WebSuite -->
+  </suite> <!-- My suite -->
 </testng-results>

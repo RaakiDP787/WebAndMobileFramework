@@ -1,1 +1,0 @@
-{"uuid":"63c3dee6-4ee2-4034-9570-00293f9d3dab","name":"com.test.webapps.WebTests.setup","children":["db2b8a99-fc37-4841-9f23-2151773d1023"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1700646460656,"stop":1700646464529}],"afters":[],"start":1700646460656,"stop":1700646464529}

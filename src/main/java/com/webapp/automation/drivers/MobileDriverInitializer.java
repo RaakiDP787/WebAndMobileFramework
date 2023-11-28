@@ -21,9 +21,9 @@ public class MobileDriverInitializer{
         Config config = new Config();
         final Capabilities capabilities = BuildCapability.buildCapabilities ();
         MobileConfig Mobileconfig = new MobileConfig();
-        System.out.println(config.getCloud());
+        System.out.println(config.getLocal());
 
-        if(config.getCloud().equals("false")) {
+        if(config.getLocal().equals("true")) {
             try {
                 driver = new AndroidDriver(new URL(Mobileconfig.getAppiumServerUrl()), capabilities);
             } catch (MalformedURLException e) {

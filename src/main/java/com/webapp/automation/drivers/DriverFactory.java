@@ -9,7 +9,7 @@ public class DriverFactory {
     public static WebDriver initDriver() throws MalformedURLException {
         WebDriver driver = null;
         String ENV = System.getProperty("environment");
-        if(ENV.equals("Mobile"))
+        if(ENV.equals("MOBILE"))
         {
             driver = new MobileDriverInitializer().initializeMobileDriver();
 

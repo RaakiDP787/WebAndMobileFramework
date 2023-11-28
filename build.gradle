@@ -24,10 +24,20 @@ dependencies {
 
 }
 
-test {
-    useTestNG(){
+test{
+    // Define the default TestNG XML file
+    def defaultMobileTestNgFile = 'src/test/resources/mobiletestng.xml'
+    def defaultWebTestNgFile = 'src/test/resources/webtestng.xml'
+
+    systemProperty 'environment', project.hasProperty('environment') ? project.environment : 'WEB'
+    def environment = System.getProperty('environment') ?: 'WEB'
+
+    def selectedTestNgFile = environment == 'MOBILE' ? defaultMobileTestNgFile : defaultWebTestNgFile
+
+    // Set the TestNG XML file for the test task
+    useTestNG {
         useDefaultListeners = true
-//        jvmArgs "-javaagent:${browserstackSDKArtifact.file}"
+        suites(selectedTestNgFile)
     }
 
     testLogging {
@@ -35,8 +45,5 @@ test {
         exceptionFormat = 'full'
     }
     testLogging.showStandardStreams = true
-   // systemProperty "environment",System.getProperty("environment")
-    systemProperty 'environment', project.hasProperty('environment') ? project.environment : 'WEB'
-    systemProperty 'local', project.hasProperty('local') ? project.environment : 'true'
 
 }

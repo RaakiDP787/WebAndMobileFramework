@@ -2,6 +2,7 @@ package com.webapp.automation.cloud;
 
 import com.webapp.automation.config.Config;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.options.UiAutomator2Options;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -17,6 +18,7 @@ public class SettingMobileCloud {
         Config config = new Config();
         AndroidDriver driver;
         DesiredCapabilities capabilities = new DesiredCapabilities();
+
         capabilities.setCapability("os_version", config.getBsMobileOsVersion());
         capabilities.setCapability("device", config.getBsMobileName());
         capabilities.setCapability("deviceName",config.getBsMobileName());

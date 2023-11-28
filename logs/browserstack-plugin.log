@@ -123,3 +123,28 @@
 18:28:28.622 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
 13:11:23.105 [AWT-EventQueue-0] INFO  c.b.l.BrowserStackRunExtension - gradle
 13:11:23.105 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+11:58:45.818 [AWT-EventQueue-0] INFO  c.b.l.BrowserStackRunExtension - gradle
+11:58:45.819 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+11:58:51.518 [ApplicationImpl pooled thread 1028] INFO  c.b.l.BrowserStackRunExtension - testng
+11:58:51.518 [ApplicationImpl pooled thread 1028] INFO  com.browserstack.utils.Helpers - true
+11:58:51.519 [ApplicationImpl pooled thread 1028] INFO  com.browserstack.utils.Helpers - /Users/testvagrant/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.12.0/b05f80d79aeaf6aa4b17f097cf7efc466d768d3a/browserstack-java-sdk-1.12.0.jar
+11:58:51.519 [ApplicationImpl pooled thread 1028] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/testvagrant/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.12.0/b05f80d79aeaf6aa4b17f097cf7efc466d768d3a/browserstack-java-sdk-1.12.0.jar
+11:58:51.520 [ApplicationImpl pooled thread 1028] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.2
+12:21:22.098 [AWT-EventQueue-0] INFO  c.b.l.BrowserStackRunExtension - gradle
+12:21:22.099 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+12:23:09.784 [AWT-EventQueue-0] INFO  c.b.l.BrowserStackRunExtension - gradle
+12:23:09.784 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+12:47:46.441 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
+12:47:46.442 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - /Users/testvagrant/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.12.1/d5e3c06cda1ff94a79979a7dc26c05fc5e1cf301/browserstack-java-sdk-1.12.1.jar
+12:47:46.442 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+12:47:46.447 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+12:47:46.448 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - /Users/testvagrant/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.12.1/d5e3c06cda1ff94a79979a7dc26c05fc5e1cf301/browserstack-java-sdk-1.12.1.jar
+12:47:46.448 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+12:48:26.441 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
+12:48:26.442 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - /Users/testvagrant/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.12.1/d5e3c06cda1ff94a79979a7dc26c05fc5e1cf301/browserstack-java-sdk-1.12.1.jar
+12:48:26.442 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+12:48:26.446 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+12:48:26.447 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - /Users/testvagrant/.gradle/caches/modules-2/files-2.1/com.browserstack/browserstack-java-sdk/1.12.1/d5e3c06cda1ff94a79979a7dc26c05fc5e1cf301/browserstack-java-sdk-1.12.1.jar
+12:48:26.447 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+17:12:22.708 [AWT-EventQueue-0] INFO  c.b.l.BrowserStackRunExtension - gradle
+17:12:22.709 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
